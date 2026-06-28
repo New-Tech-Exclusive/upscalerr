@@ -1,0 +1,15 @@
+# Training data
+trainData/
+
+# Model checkpoints
+training/checkpoints/
+
+# Built engine files
+profiles/*.engine
+
+# ONNX exports
+engine/onnx/
+
+# Build artifacts
+backend/build/
+CMakeCache.txt
