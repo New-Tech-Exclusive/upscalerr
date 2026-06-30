@@ -42,6 +42,8 @@ engine/onnx/
 *.onnx
 *.engine
 *.plan
+upscalerr/configs/
+upscalerr/checkpoints/
 
 # Logs and telemetry
 logs/
