@@ -1,0 +1,15 @@
+torch>=2.2.0
+tensorrt>=10.0.0
+dxcam>=0.0.5
+PySide6>=6.6.0
+PyOpenGL>=3.1.7
+PyOpenGL-accelerate>=3.1.7
+pycuda>=2024.1
+numpy>=1.24.0
+onnx>=1.15.0
+onnxruntime-gpu>=1.17.0
+PyYAML>=6.0
+Pillow>=10.0.0
+tqdm>=4.66.0
+torchvision>=0.17.0
+scikit-image>=0.22.0

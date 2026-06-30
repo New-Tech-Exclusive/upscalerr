@@ -1,0 +1,20 @@
+model:
+  variant: flownet_s
+
+data:
+  train_dir: C:\Users\alway\code\upscalerr\trainData\FlyingChairs2\train
+  val_dir: C:\Users\alway\code\upscalerr\trainData\FlyingChairs2\val
+  crop_size: 256
+  batch_size: 8
+  num_workers: 4
+
+train:
+  epochs: 1
+  lr: 0.0001
+  weight_decay: 0.0004
+  smooth_weight: 0.1
+  checkpoint_dir: checkpoints/flownet
+  log_interval: 50
+
+export:
+  onnx_path: models/onnx/flownet.onnx

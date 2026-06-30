@@ -1,15 +1,64 @@
-# Training data
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE and editor state
+.vscode/
+.idea/
+.vs/
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Training and model artifacts
 trainData/
-
-# Model checkpoints
-training/checkpoints/
-
-# Built engine files
+training/
+weights/
+engines/
 profiles/*.engine
-
-# ONNX exports
 engine/onnx/
+*.onnx
+*.engine
+*.plan
 
-# Build artifacts
-backend/build/
+# Logs and telemetry
+logs/
+*.log
+*.trace
+
+# Runtime scratch data
+tmp/
+temp/
+cache/
+captures/
+frames/
+artifacts/
+
+# Project-specific generated files
 CMakeCache.txt
+backend/build/
+backend/out/
+backend/.vs/
+

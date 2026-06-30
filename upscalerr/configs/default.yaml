@@ -1,0 +1,28 @@
+device:
+  cuda_device_index: 0
+
+capture:
+  output_color: BGRA
+  max_fps: 240
+  region: null  # null = full monitor; set [left, top, right, bottom] for window crop
+
+engines:
+  espcn_path: models/engines/espcn_2x_fp16.engine
+  flownet_path: models/engines/flownet_fp16.engine
+  scale: 2
+
+pipeline:
+  frame_generation: true
+  flow_half_step: 0.5
+  pyramid_levels: 2
+  target_present_fps: 120
+
+overlay:
+  monitor_index: 0
+  borderless_fullscreen: true
+  transparent_input: true
+  vsync: false
+
+logging:
+  level: INFO
+  show_hud: true
